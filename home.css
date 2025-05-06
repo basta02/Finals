@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color:  #222;
+  color: #1a1a1a;
+}
+
+
+header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px; 
+  height: auto;
+  margin-right: 10px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Archivo+Black&family=Bacasime+Antique&display=swap');
+.site-name {
+  font-family: "Arbutus Slab", serif;
+  font-size: 18px;
+  color: #938743;
+}
+
+
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 30px;
+  text-decoration: none; 
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: #938743; 
+  text-decoration: none; 
+}
+
+/* Hero Section */
+.hero {
+  background-image: url(banner.png); 
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 60px;
+  color: #938743;
+  
+  opacity: 0; 
+  transition: transform 1s linear, opacity 1s linear;
+}
+
+.hero.visible {
+  opacity: 1; 
+}
+
+.hero-text {
+  z-index: 5;
+}
+
+.hero-btn {
+  position:absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 32px;
+  background-color: black;
+  color: #d4c66c;
+  border: none;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 3;
+}
+
+.hero-btn:hover {
+  background-color: #222;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 150%;
+  transform: translateX(-2px);
+  color: #938743;
+}
+
+
+
+.intro {
+  display: flex;
+  padding: 50px;
+  background-color: #403F3F;
+  gap: 20px;
+
+  
+  transform: translateX(100px);
+  opacity: 0;
+  transition: transform 1s ease-in, opacity 1s ease;
+}
+
+.intro.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.intro-img {
+  width: 350px;
+  border-radius: 50px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+.intro-text h2 {
+  color: #938743; 
+  margin-bottom: 50px;
+  margin-top: 20px;
+  font-family: 'Archivo Black', sans-serif; 
+  line-height: 150%;
+  font-size: 2rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bacasime+Antique&display=swap');
+.intro-text p {
+  font-size: 35px;
+  line-height: 170%;
+  color: white;
+  font-family: "Bacasime Antique", serif;
+  text-align:justify;
+  margin-top: 40px;
+}
+
+
+
+.amenities {
+  background-color: #403F3F;
+  padding: 40px 60px;
+
+  transform: translateX(100%); 
+  opacity: 0; 
+  transition: transform 1s ease-in, opacity 1s ease; 
+}
+
+.amenities.visible {
+  opacity: 1;
+  transform: translateX(0); 
+}
+
+  
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+.amenities h3 {
+  color: #938743; 
+  margin-bottom: 20px;
+  font-family: 'Archivo Black', sans-serif; 
+  line-height: 150%;
+  font-size: 2rem;
+}
+
+.amenity-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.amenity {
+  background-color: #403F3F;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 250px;
+}
+.amenity-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.amenity img {
+  width: 100%; 
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.amenity-image:hover img {
+  transform: scale(1.1); 
+}
+
+.amenity-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: #d4c66c;
+  padding: 12px 32px;
+  border-radius: 40px;
+  font-size: 1rem;
+  opacity: 0.9;
+  pointer-events: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 3;
+ 
+}
+
+
+/* Footer */
+footer {
+  background-color: #1a1a1a; 
+  color: #ccc; 
+  padding: 70px 90px; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  flex-wrap: wrap;
+  font-family: "Arbutus Slab", serif;;
+}
+
+
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo-container img {
+  width: 100px; 
+  height: auto; 
+  margin-right: 0px; 
+}
+
+.footer-logo-container p {
+  font-size: 2.1rem;
+  font-family: "Arbutus Slab", serif;
+  color: #938743; 
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center; 
+  }
+
+  .footer-logo-container img {
+    margin-bottom: 10px;
+  }
+
+  .footer-logo-container p {
+    font-size: 2.1rem; 
+  }
+}
+.footer-contact-info .contact-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 10px;
+  font-size: 1.0rem;
+}
+
+.footer-contact-info .contact-numbers p {
+  margin: 4px 0;
+  display: flex;
+  font-size: 1.0rem;
+}
+
+.footer-contact-info .label {
+  width: 80px;
+}
+
+.footer-contact-info .number {
+  font-family: "Arbutus Slab", serif;;
+  color: #ccc;
+}
+
+
+.footer-icon {
+  color: #938743;
+  margin-right: 10px;
+  font-size: 1.1rem;
+  width: 20px; 
+  height: 20px;
+  font-family: "Arbutus Slab", serif;
+}
+
+.footer-left p,
+.footer-right p {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  font-family: "Arbutus Slab", serif;;
+}
+
+.footer-right p:hover {
+  color: #938743;
+  cursor: pointer;
+}
+
+
