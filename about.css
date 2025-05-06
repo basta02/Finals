@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color:  #222;
+    color: #1a1a1a;
+  }
+  
+  /* Header */
+  header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Archivo+Black&family=Bacasime+Antique&display=swap');
+  .site-name {
+    font-family: "Arbutus Slab", serif;
+    font-size: 18px;
+    color: #938743;
+  }
+  
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+  
+  nav a {
+    color: #fff;
+    margin-left: 30px;
+    text-decoration: none; /* No underline by default */
+    font-size: 0.95rem;
+  }
+  
+  nav a:hover {
+    color: #938743; /* Change to gold color on hover */
+    text-decoration: none; /* Remove any decoration on hover */
+  }
+
+  .hero {
+    background: url(banner3.png) center/cover no-repeat;
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #333;
+  }
+  
+  .hero h1 {
+    font-size: 100px;
+    color: #938743;
+    margin-bottom: 10px;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bacasime+Antique&display=swap');
+
+  .hero p {
+
+    font-family: "Bacasime Antique", serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+    
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bacasime+Antique&display=swap');
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+  background-color: #403F3F;
+  flex-wrap: wrap;
+}
+
+.intro-text {
+  flex: 1 1 55%;
+}
+
+.intro-img {
+  width: 300px;
+  height: 600px;
+  border-radius: 50px;
+  flex: 1 1 35%;
+}
+
+.intro-text h2 {
+  color: #938743;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-family: 'Archivo Black', sans-serif;
+  line-height: 150%;
+  font-size: 2rem;
+}
+
+.intro-text p {
+  font-size: 25px;
+  line-height: 200%;
+  color: white;
+  font-family: "Bacasime Antique", serif;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+/* POLICY */
+.policy {
+    background-color: #222;
+    color: #eee;
+    padding: 4em 2em;
+  }
+  
+  .policy h2 {
+    color: #938743;
+    text-align: left;
+    margin-bottom: 30px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2rem;
+  }
+  
+  .policy-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em; /* Slightly larger gap */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .policy-columns div {
+    flex: 1 1 30%;
+    min-width: 280px;
+    margin-bottom: 2em; /* Extra vertical spacing between rows */
+    padding: 1em; /* Optional: adds inner space around content */
+    background-color: #2b2b2b; /* Optional: slight background difference for contrast */
+    border-radius: 8px; /* Optional: rounded corners */
+  }
+  
+  .policy-columns h4 {
+    color: #938743;
+    margin-top: 1em;
+    font-family: 'Archivo Black', sans-serif;
+  }
+  
+  .policy-columns ul {
+    padding-left: 1.2em;
+    
+  }
+  .policy-columns div:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  
+ /* Footer */
+/* Style the footer */
+footer {
+    background-color: #1a1a1a; /* Dark background for footer */
+    color: #ccc; /* Light gray text */
+    padding: 70px 90px; /* Padding around the footer */
+    display: flex;
+    justify-content: space-between; /* Space out footer content */
+    align-items: center; /* Vertically center items */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    font-family: "Arbutus Slab", serif;;
+  }
+  
+  /* Footer logo container */
+  .footer-logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo-container img {
+    width: 100px; /* Same size as the logo in the header */
+    height: auto; /* Keep the aspect ratio */
+    margin-right: 0px; /* Space between logo and text */
+  }
+  
+  .footer-logo-container p {
+    font-size: 2.1rem;
+    font-family: "Arbutus Slab", serif;
+    color: #938743; /* Gold color for text */
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    footer {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      text-align: center; /* Center-align text */
+    }
+  
+    .footer-logo-container img {
+      margin-bottom: 10px; /* Add space between logo and text */
+    }
+  
+    .footer-logo-container p {
+      font-size: 2.1rem; /* Slightly smaller text for mobile */
+    }
+  }
+  .footer-contact-info .contact-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 10px;
+    font-size: 1.0rem;
+  }
+  
+  .footer-contact-info .contact-numbers p {
+    margin: 4px 0;
+    display: flex;
+    font-size: 1.0rem;
+  }
+  
+  .footer-contact-info .label {
+    width: 80px;
+  }
+  
+  .footer-contact-info .number {
+    font-family: "Arbutus Slab", serif;;
+    color: #ccc;
+  }
+  
+  
+  .footer-icon {
+    color: #938743;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    width: 20px; 
+    height: 20px;
+    font-family: "Arbutus Slab", serif;
+  }
+  
+  .footer-left p,
+  .footer-right p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-family: "Arbutus Slab", serif;;
+  }
+  
+  .footer-right p:hover {
+    color: #938743;
+    cursor: pointer;
+  }
+  
